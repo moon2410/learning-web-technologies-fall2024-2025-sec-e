@@ -2,6 +2,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = isset($_POST["name"]) ? trim($_POST["name"]) : "";
     $nameErr = "";
+    $nameErw = "";
+    $nameErl = "";
+    $nameErc = "";
 
     if ($name == "") {
         $nameErr = "Name is required";
@@ -15,13 +18,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         if ($wordCount < 2) {
-            $nameErr = "Name must contain at least two words";
+            $nameErw = "Name must contain at least two words";
         } elseif (!ctype_alpha($name[0])) {
-            $nameErr = "Name must start with a letter";
+            $nameErl = "Name must start with a letter";
         } else {
             foreach (str_split($name) as $char) {
                 if (strpos("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.- ", $char) === false) {
-                    $nameErr = "Invalid characters used";
+                    $nameErc = "Invalid characters used";
                     break;
                 }
             }
@@ -29,9 +32,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($nameErr) {
-       echo "Invalid <br> Required Proper Name"; 
+       echo "Name Required <br> Box not be Empty "; 
       
-    } else {
+    }    elseif ($nameErw) {
+        echo "Name required minimum two word "; 
+       
+     }
+     elseif ($nameErl) {
+        echo "Name must be start with a letter"; 
+       
+     } 
+     elseif ($nameErc) {
+        echo " Must use proper character "; 
+       
+     }
+    else {
         echo "Validation Successful";
         echo "Your name is: " .$name;
     }

@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailErf = "";
 
     if (empty($email)) {
-        $emailErr = "Email is required";
+        $emailErf = "Email is required";
     }
     elseif (strpos($email, '@') === false || strpos($email, '.') === false || !ctype_alpha($email[0])) {
         $emailErr = "Invalid email format";
@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($emailErr) {
         echo"Invalid Email Format <br> Use like sample@exmaple.com" ;
-            }
+            }elseif($emailErf){echo"Email Required <br> Box not be Empty";}
         else {
        echo "Validation Successful";
         echo "Your email is: " . $email ;
