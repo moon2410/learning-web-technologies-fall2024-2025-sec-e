@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #4267B2; /* Consistent blue tone */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header button {
+    background-color: white;
+    color: #4267B2;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header button:hover {
+    background-color: #365899; /* Darker blue */
+    color: white;
+}
+
+/* Main Container */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px;
+    width: 90%;
+}
+
+/* User Feed Button */
+.container > button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.container > button:hover {
+    background-color: #365899;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-section img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #ddd; /* Placeholder background */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-section button:hover {
+    background-color: #365899;
+}
+
+.profile-section div {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Info Section */
+.info-section {
+    margin-top: 20px;
+}
+
+.info-section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-section label {
+    width: 120px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.info-section input {
+    padding: 10px;
+    width: calc(100% - 140px); /* Adjust width to fit alongside label */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.info-section button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-section button:hover {
+    background-color: #365899;
+}
+
+/* Deactivate/Delete Button */
+.container > button:last-child {
+    background-color: #f44336; /* Red for destructive action */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.container > button:last-child:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header input[type="text"] {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .info-section label {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .info-section div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-section input {
+        width: 100%;
+    }
+}

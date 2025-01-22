@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Light, modern background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center the content vertically and horizontally */
+}
+
+/* Header Styles */
+h1 {
+    color: #4267B2; /* Blue tone to match social media vibe */
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Container for Links */
+.container {
+    text-align: center; /* Center all elements */
+    background-color: white; /* White card-style background */
+    padding: 30px;
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Limit width for better focus */
+    width: 90%;
+}
+
+/* Link Styles */
+a {
+    color: #4267B2; /* Blue for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+a:hover {
+    color: #365899; /* Slightly darker blue on hover */
+    transform: scale(1.1); /* Enlarge slightly for better interactivity */
+}
+
+/* Spacing for Links */
+.container a {
+    display: block; /* Ensure links stack vertically */
+    margin: 15px 0; /* Add spacing between links */
+}
+
+/* Button-like Hover Effect */
+.container a {
+    padding: 10px 15px;
+    border: 2px solid #4267B2; /* Outline for button effect */
+    border-radius: 5px; /* Rounded edges for modern look */
+    background-color: #fff; /* Background for contrast */
+}
+
+.container a:hover {
+    background-color: #4267B2;
+    color: white;
+}
+
+/* Subtle Text */
+.container p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+    .container {
+        padding: 20px;
+    }
+}

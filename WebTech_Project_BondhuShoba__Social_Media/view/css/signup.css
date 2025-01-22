@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically and horizontally */
+}
+
+/* Form Container */
+form {
+    background-color: white; /* White card-like background */
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 12px; /* Smoother rounded edges */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for emphasis */
+    width: 100%;
+    max-width: 450px; /* Wider form for better readability */
+    text-align: center;
+}
+
+/* Heading Style */
+h1 {
+    color: #4267B2; /* Blue tone */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%; /* Full-width input fields */
+    padding: 12px; /* More padding for comfort */
+    margin-bottom: 15px; /* Spacing between inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Smoother rounded edges */
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effects */
+}
+
+/* Focus Effect for Input Fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border-color: #4267B2;
+    box-shadow: 0 0 5px rgba(66, 103, 178, 0.5); /* Subtle blue glow */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Radio Buttons */
+.radio-group {
+    text-align: left; /* Align radio options to the left */
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.radio-group label {
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px; /* Smooth edges */
+    font-size: 1.1em; /* Slightly larger for better visibility */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Full-width button */
+}
+
+input[type="submit"]:hover {
+    background-color: #365899; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 4px 8px rgba(54, 88, 153, 0.2); /* Add slight shadow on hover */
+}
+
+/* Signup Link */
+p {
+    margin-top: 15px; /* Spacing above the signup link */
+    font-size: 0.9em;
+    color: #555;
+}
+
+a {
+    color: #4267B2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #365899; /* Slightly darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Adjust heading size for smaller screens */
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
